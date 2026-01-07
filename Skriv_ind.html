@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Skriv ind</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Brug dine eksisterende styles -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link
+      rel="icon"
+      href="images/favicon.svg"
+      type="image/svg+xml"
+    />
+  </head>
+  <body class="page-skriv-ind">
+    <header class="site-header container">
+      <a class="logo" href="index.html">Vasilisa<br />Virovka</a>
+
+      <nav aria-label="Hovedmenu">
+        <ul class="nav">
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="portofolio.html">Porteføjle</a></li>
+          <li><a href="ommig.html">Om mig</a></li>
+        </ul>
+      </nav>
+
+   
+    </header>
+
+    <main class="container">
+      <!-- Hero -->
+      <section class="hero">
+        <div>
+          <h1>Skriv ind</h1>
+          <p>
+            Har du et spørgsmål, en forretningsidé til et nyt projekt eller feedback til min side? Skriv
+            til mig. Jeg svarer så hurtigt jeg kan! 
+          </p>
+          <div class="cta-row">
+            <a class="link-box" href="index.html">Tilbage til forsiden</a>
+          </div>
+        </div>
+
+        <!-- Valgfrit billede – brug dit eget hvis du vil -->
+        <img
+          class="support-illustration"
+          src="images/Kundeservice.webp"
+          alt="Kundeservice"
+        />
+      </section>
+
+      <!-- Kontaktformular -->
+      <section class="grid">
+        <article class="card" style="max-width: 720px">
+          <h2>Kontaktformular</h2>
+          <p>Udfyld felterne herunder og tryk “Send besked”.</p>
+
+          <form action="#" method="post" class="contact-form" novalidate>
+            <div class="form-row" style="display: grid; gap: 12px">
+              <label for="name">Navn</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Dit navn"
+                required
+              />
+            </div>
+
+            <div
+              class="form-row"
+              style="display: grid; gap: 12px; margin-top: 12px"
+            >
+              <label for="email">E-mail</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="din@mail.dk"
+                inputmode="email"
+                required
+              />
+            </div>
+
+            <div
+              class="form-row"
+              style="display: grid; gap: 12px; margin-top: 12px"
+            >
+              <label for="topic">Emne</label>
+              <select id="topic" name="topic" required>
+                <option value="" selected disabled>Vælg emne…</option>
+                <option>Ny forretningsidé</option>
+                <option>Feedback til siden</option>
+                <option>Pristilbud på en opgave</option>
+                <option>Andet</option>
+              </select>
+            </div>
+
+            <div
+              class="form-row"
+              style="display: grid; gap: 12px; margin-top: 12px"
+            >
+              <label for="message">Besked</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Skriv din besked her…"
+                required
+              ></textarea>
+            </div>
+
+            <div
+              class="form-row"
+              style="
+                display: flex;
+                gap: 10px;
+                align-items: flex-start;
+                margin-top: 12px;
+              "
+            >
+              <input id="consent" name="consent" type="checkbox" required />
+              <label for="consent">
+                Jeg accepterer, at min henvendelse må behandles for at kunne
+                besvares.
+              </label>
+            </div>
+
+            <div class="cta-row" style="margin-top: 16px">
+              <!-- Brug link-box i stedet for .btn -->
+              <button type="submit" class="link-box">Send besked</button>
+              <a class="link-box" href="index.html">Annullér</a>
+            </div>
+          </form>
+        </article>
+
+        <!-- Info-”features” i samme stil som forsiden -->
+        <ul class="features">
+          <li class="feature-item">
+            <img
+              class="feature-icon"
+              src="images/phone_icon.svg"
+              alt="Telefon"
+            />
+            <div class="feature-text">
+              <h4>Customer Support</h4>
+              <p>
+                Kontakt mig via formularen. Jeg vender tilbage hurtigst muligt.
+              </p>
+            </div>
+          </li>
+
+          <li class="feature-item">
+            <img
+              class="feature-icon"
+              src="images/price-tag_icon.svg"
+              alt="Bedste pris"
+            />
+            <div class="feature-text">
+              <h4>Bedste konkurrencedygtige pris på markedet!</h4>
+              <p>Jeg svarer inden for 5 hverdage</p>
+            </div>
+          </li>
+
+          <li class="feature-item">
+            <img
+              class="feature-icon"
+              src="images/place_icon.svg"
+              alt="Placering"
+            />
+            <div class="feature-text">
+              <h4>Landsdækkende</h4>
+              <p>Uanset hvor i landet du bor, skriv endelig ind.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+     <!-- Footer -->
+<footer class="site-footer container">
+  <span class="footer-logo">
+    <strong>Vasilisa</strong><br />
+    <strong>Virovka</strong>
+  </span>
+
+  <p class="tagline"><em>&copy; 2026 All rights reserved</em></p>
+
+  <!-- Terms pop-over -->
+  <button class="terms-trigger" aria-expanded="false">
+    Terms and Conditions
+  </button>
+
+  <div class="terms-popover" hidden>
+    <p>
+         Denne webside er en eksamensopgave. Alt indhold er kun til
+      undervisnings- og portfolioformål.
+    </p>
+  </div>
+</footer>
+
+  <!-- JavaScript -->
+    <script src="js/popover.js"></script>
+  </body>
+</html>

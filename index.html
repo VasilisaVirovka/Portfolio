@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forside</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="site-header container">
+      <a class="logo" href="index.html">Vasilisa<br />Virovka</a>
+
+      
+
+      <nav aria-label="Hovedmenu">
+        <ul class="nav">
+          <li class="active"><a href="index.html">Forside</a></li>
+          <li><a href="portofolio.html">Portefølje</a></li>
+          <li><a href="ommig.html">Om mig</a></li>
+          <li><a href="Skriv_ind.html">Skriv ind</a></li>
+        </ul>
+      </nav>
+
+      
+    </header>
+
+    <!-- MAIN -->
+    <main class="container">
+      <section class="hero">
+        <h1>Hvem er jeg?</h1>
+        <p>
+        Velkommen til min webside. Du kan læse lidt mere om mig her på forsiden eller gå til min portfolio for at se hvad jeg senest har lært. Du kan også vælge at gå til siden “Om mig” for at læse lidt mere om min erhvervserfaring.
+        </p>
+
+        <div class="cta-row">
+          <a class="link-box" href="portofolio.html">Gå til min portefølje</a>
+          <a class="link-box" href="ommig.html">Gå til “Om mig”</a>
+        </div>
+
+        <img
+          class="skriveredskaber"
+          src="images/Pen.webp"
+          alt="Professionelle skriveredskaber"
+        />
+      </section>
+
+      <!-- INFO-KORT -->
+      <section class="grid">
+        <h2>Vasilisa Virovka</h2>
+        <p>3 hurtige informationer om Vasilisa...</p>
+
+        <article class="card">
+          <img src="images/Analyse_chart.webp" alt="Analyse og struktur" />
+          <h3>Analytisk og struktureret</h3>
+          <p>
+            Jeg arbejder systematisk med komplekse problemstillinger og træffer
+            beslutninger på baggrund af overblik, data og helhedsforståelse.
+          </p>
+        </article>
+
+        <article class="card">
+          <img
+            class="icon"
+            src="images/Teamwork.webp"
+            alt="Samarbejde i team"
+          />
+          <h3>Emotionelt intelligent og samarbejdsstærk</h3>
+          <p>
+            Jeg kommunikerer klart, sætter respektfulde grænser og bidrager til
+            stabile, professionelle relationer i teams.
+          </p>
+        </article>
+
+        <article class="card">
+          <img
+            class="icon"
+            src="images/Big_Boss.webp"
+            alt="Selvstændigt arbejde"
+          />
+          <h3>Selvstændig med høj integritet</h3>
+          <p>
+            Jeg tager ansvar for egne opgaver, står ved mine vurderinger og
+            arbejder konsekvent uden behov for ekstern validering.
+          </p>
+        </article>
+
+        <!-- KONTAKT -->
+        <h2>Skriv ind</h2>
+        <p>Har du spørgsmål, er du velkommen til at kontakte mig.</p>
+
+        <img
+          class="support-illustration"
+          src="images/Kundeservice.webp"
+          alt="Kundeservice illustration"
+        />
+
+        <ul class="features">
+          <li class="feature-item">
+            <img class="feature-icon" src="images/phone_icon.svg" alt="Telefon ikon" />
+            <div class="feature-text">
+              <h4>Customer Support</h4>
+              <p>
+                Kontakt mig →
+                <a href="./Skriv_ind.html">Skriv ind</a>
+              </p>
+            </div>
+          </li>
+
+          <li class="feature-item">
+            <img class="feature-icon" src="images/price-tag_icon.svg" alt="Pris ikon" />
+            <div class="feature-text">
+              <h4>Bedste pris</h4>
+              <p>Ingen kompromiser med kvaliteten.</p>
+            </div>
+          </li>
+
+          <li class="feature-item">
+            <img class="feature-icon" src="images/place_icon.svg" alt="Placering ikon" />
+            <div class="feature-text">
+              <h4>Landsdækkende</h4>
+              <p>Du kan kontakte mig uanset hvor du er i landet.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+   <!-- Footer -->
+<footer class="site-footer container">
+  <span class="footer-logo">
+    <strong>Vasilisa</strong><br />
+    <strong>Virovka</strong>
+  </span>
+
+  <p class="tagline"><em>&copy; 2026 All rights reserved</em></p>
+
+  <!-- Terms pop-over -->
+  <button class="terms-trigger" aria-expanded="false">
+    Terms and Conditions
+  </button>
+
+  <div class="terms-popover" hidden>
+    <p>
+      Denne webside er en eksamensopgave. Alt indhold er kun til
+      undervisnings- og portfolioformål.
+    </p>
+  </div>
+</footer>
+
+  <!-- JavaScript -->
+    <script src="js/popover.js"></script>
+  </body>
+</html>

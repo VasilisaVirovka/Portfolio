@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Om mig</title>
+
+    <!-- Google Fonts (samme som resten af sitet) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="site-header container">
+      <a class="logo" href="index.html">Vasilisa<br />Virovka</a>
+
+      <nav aria-label="Hovedmenu">
+        <ul class="nav">
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="portofolio.html">Portefølje</a></li>
+          <li class="active"><a href="ommig.html">Om mig</a></li>
+          <li><a href="Skriv_ind.html">Skriv ind</a></li>
+        </ul>
+      </nav>
+
+      
+    </header>
+
+    <!-- Main -->
+    <main class="container">
+      <section class="about-intro">
+        <div class="about-text">
+          <h1>Om mig</h1>
+          <p>
+            Jeg studerer Multimediedesign på Københavns Erhvervsakademi og jeg har særligt fokus på web, UX og frontend. Jeg trives med at arbejde fra bunden og have overblik over hele processen, herunder fra idé og research og helt til den færdige løsning i VS Code (Et kodeprogram). For mig handler et optimalt design om klarhed, struktur og brugerdefinerede løsninger, som reelt fungerer for brugeren i hverdagen.
+          </p>
+        </div>
+      </section>
+
+      <section class="about-content grid">
+        <!-- Billede -->
+        <div class="about-image">
+          <img src="images/Vasilisa_Virovka_longer_frame_picture.webp" alt="Portræt af Vasilisa Virovka" />
+        </div>
+
+        <!-- Tekstbokse -->
+        <div class="about-sections">
+          <article class="card">
+            <h2>Baggrund</h2>
+            <p>Jeg er i gang med multimediedesignuddannelsen på EK og har allerede arbejdet meget praktisk med HTML, CSS, JavaScript og forskellige UX-metoder. I min arbejdsproces tænker jeg mobil-first og stræber efter at holde mine løsninger enkle, strukturerede og lette at forstå. Jeg lægger vægt på at kunne forklare mine designvalg og dokumentere, hvordan en løsning er udviklet med afsæt i brugertest.</p>
+          </article>
+
+          <article class="card">
+            <h2>Erhvervserfaring</h2>
+            <p>Jeg har erfaring fra flere forskellige jobs, hvor kommunikation, ansvar og struktur har været en stor del af hverdagen. Som tidligere Studiecoach, Market Business Analyst og nuværende General Manager i en udlejningsvirksomhed har jeg lært en masse. Min tidligere erhvervserfaring har lært mig at lytte, bevare overblikket og finde konkrete og optimale løsninger – også når tempoet kan være højt. Fælles for mine erfaringer er, at jeg er vant til at tage ansvar og arbejde struktureret – også under pres!</p>
+          </article>
+
+          <article class="card">
+            <h2>Hvad har jeg lært på 1. semester?</h2>
+      <p>
+  På 1. semester har jeg opnået en solid forståelse for planlægning,
+  opbygning og vedligeholdelse af websites. Jeg kan arbejde med
+  wireframes, layouts og digitale prototyper som grundlag for
+  strukturerede og gennemtænkte løsninger.
+</p>
+
+<p>
+  Jeg har lært at kode responsive, mobil-first websites og er blevet
+  fortrolig med HTML, CSS og grundlæggende JavaScript. Samtidig har jeg
+  opbygget erfaring med UX-metoder, herunder brugertest, evaluering og
+  iteration, som jeg aktivt anvender til at forbedre mine løsninger.
+</p>
+
+<p>
+  Derudover kan jeg arbejde med UI-elementer, formularer og simple
+  interaktioner, så brugeroplevelsen understøttes visuelt og
+  funktionelt. Jeg har også lært at producere originalt indhold i form
+  af foto og video og er blevet særligt interesseret i at anvende
+  AI-værktøjer, som fx Adobe Firefly, til generering af unikt visuelt
+  indhold til indholdsproduktion.
+</p>
+
+<p>
+  Endelig har jeg lært vigtigheden af at dokumentere proces og
+  designvalg, og jeg bestræber mig på at arbejde struktureret og
+  gennemsigtigt i alle mine projekter.
+
+</p>
+          </article>
+
+          
+        </div>
+      </section>
+    </main>
+
+     <!-- Footer -->
+<footer class="site-footer container">
+  <span class="footer-logo">
+    <strong>Vasilisa</strong><br />
+    <strong>Virovka</strong>
+  </span>
+
+  <p class="tagline"><em>&copy; 2026 All rights reserved</em></p>
+
+  <!-- Terms pop-over -->
+  <button class="terms-trigger" aria-expanded="false">
+    Terms and Conditions
+  </button>
+
+  <div class="terms-popover" hidden>
+    <p>
+          Denne webside er en eksamensopgave. Alt indhold er kun til
+      undervisnings- og portfolioformål.
+    </p>
+  </div>
+</footer>
+
+  <!-- JavaScript -->
+    <script src="js/popover.js"></script>
+  </body>
+</html>
