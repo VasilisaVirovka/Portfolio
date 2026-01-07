@@ -1,0 +1,165 @@
+/* =========================================================
+   DESKTOP LAYOUT (>= 1024px)
+   Fælles desktop-layout for hele sitet
+   Indeholder overordnede grid-, header- og hero-strukturer,
+   som gælder for alle sider på desktop.
+   ========================================================= */
+
+/* =========================================================
+   DESKTOP LAYOUT – SKRIV_IND.HTML (>= 1024px)
+   Side-specifikt desktop-layout for kontaktsiden.
+   Overskriver eller supplerer det fælles layout,
+   hvor siden kræver en anderledes struktur.
+   ========================================================= */
+
+/* ===========================
+   Desktop layout (>= 1024px)
+   =========================== */
+@media (min-width: 1024px) {
+  /* Ramme/bredde */
+  .container {
+    width: min(100%, 1080px);
+    margin-inline: auto;
+  }
+
+  /* Header / navigation */
+  .site-header {
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .nav a {
+    padding: 8px 12px;
+  }
+
+  /* HERO: 2-spaltet – tekst venstre, billede højre */
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* tekst | billede */
+    align-items: center;
+    gap: 24px;
+  }
+  .hero h1 {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0;
+  }
+  .hero h1 + p {
+    grid-column: 1;
+    grid-row: 2; /* teksten står lige under H1 */
+    margin: 8px 0 0; /* lidt luft – justér efter smag */
+    line-height: 1.5;
+  }
+  .hero .cta-row {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .hero img {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    justify-self: end;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* GRID-sektion (Bokse + "Skriv ind") */
+  .grid {
+    display: grid;
+    /* Giver ekstra plads til billedet: 2fr (kol.1) + 1fr (kol.2) + 1fr (kol.3) */
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 24px;
+  }
+
+  /* Sektionstitel + introtekst i fuld bredde øverst */
+  .grid > h2 {
+    grid-column: 1 / -1;
+    margin: 0 0 4px;
+  }
+  .grid > h2 + p {
+    grid-column: 1 / -1;
+    margin: 0 0 12px;
+  }
+
+  /* "Skriv ind" titel + intro i fuld bredde under opskrifterne */
+  .grid > h1,
+  .grid > h1 + p {
+    grid-column: 1 / -1;
+  }
+
+  /* Kundeservicedame-billedet: fyld 2 kolonner (kan blive stort) */
+  .grid > img.support-illustration {
+    grid-column: 1 / span 2; /* venstre + midterkolonnen */
+    justify-self: start;
+    align-self: start;
+    width: min(100%, 500px); /* realistisk maxbredde – justér fx til 1100px */
+    height: auto;
+    max-width: none;
+    display: block;
+  }
+
+  /* Feature-listen: kun højre kolonne */
+  .grid > ul.features {
+    grid-column: 3;
+    align-self: start;
+    margin: 0;
+    max-width: 48rem;
+    list-style: none;
+    padding: 0;
+  }
+
+  /* Rækkerne med ikon + tekst */
+  .feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin: 0 0 14px;
+  }
+  .feature-icon {
+    width: 56px;
+    height: auto;
+    flex: 0 0 auto;
+  }
+}
+@media (min-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+  }
+}
+/* Kun skriv_ind.html: 2-spaltet layout på desktop */
+@media (min-width: 1024px) {
+  .page-skriv-ind .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* formular bred | features smal */
+    gap: 24px;
+  }
+
+  .page-skriv-ind .grid > .card {
+    grid-column: 1;
+  }
+
+  .page-skriv-ind .grid > .features {
+    grid-column: 2;
+    justify-self: start; /* ikke klistret til højre */
+    align-self: start;
+    margin: 0;
+    max-width: 36rem; /* pæn linjelængde */
+    list-style: none;
+    padding: 0;
+  }
+
+  .page-skriv-ind .feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin: 0 0 14px;
+  }
+
+  .page-skriv-ind .feature-icon {
+    width: 56px;
+    height: auto;
+    flex: 0 0 auto;
+  }
+}

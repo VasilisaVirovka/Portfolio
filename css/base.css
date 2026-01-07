@@ -1,0 +1,45 @@
+* Minimal reset / base */
+* {
+  box-sizing: border-box;
+}
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global 1,5 linjeafstand */
+html {
+  line-height: 1.5; /* unitless = skalerer med fontstørrelsen */
+}
+
+/* Sørg for at alle typografiske elementer arver */
+body,
+p,
+a,
+li,
+td,
+th,
+input,
+textarea,
+button,
+label,
+small {
+  line-height: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
